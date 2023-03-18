@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "satochi";
+    src: url("../fonts/satochi.otf")  format('truetype');
+  }
+@font-face {
+    font-family: "satochi-bold";
+    src: url("../fonts/satochi-bold.otf") format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'hatton';
+    src: url('../fonts/hatton.otf') format('truetype');
+}
+
+/**************** General settings ***************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(closest-corner circle at 0% 90%,#FEE7CF 0%, #FFF6EC 80%,transparent),
+    radial-gradient(closest-corner circle at 80% 20%, #FEE7CF 0%, #FFF6EC 80%,transparent),
+    radial-gradient(closest-corner circle at 10% 10%, #FEE7CF 0%, #FFF6EC 80%);
+    /* background-color: #FFF6EC; */
+    color: #AD7036;
+    width: 100%;
+    box-sizing: border-box;
+    left:0px;
+}
+
+h1 {
+    font-family: 'hatton';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'satochi';
+    font-size: 25px;
+    font-weight: normal;
+}
+
+p {
+    line-height: 35px;
+    font-size: 18px;
+    font-family: 'satochi';
+}      
+
+a{
+    text-decoration: none;
+}
+
+.spaced_h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.spaced_p {
+    margin-bottom: 40px;
+}
+
+.bold h2{
+    font-family: satochi-bold;
+    margin-bottom: 20px;
+}
+
+.max-width {
+    max-width: 2500px;
+	margin-right:auto !important; 
+	margin-left:auto !important;    
+}
+
+/**************** Header ***************/
+
+.header {
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.nav_right{
+    margin-top: 20px;
+    margin-left: 11%;
+}
+
+.hr {
+    margin-top: 80px;
+    border: 1px solid #AD7036;
+    color:#AD7036;
+}
+
+/**************** Hero section (1) ***************/
+
+/**************** Ticketing section (2) ***************/
+
+.center_block {
+    display: block;
+    justify-content: center;
+    padding-bottom: 0;
+    width: 100%;
+    margin: 200px 0;
+    margin-top: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.flowers_ticket {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: 4px;
+    padding: 10px;
+    background-repeat: repeat;
+    background-image: url(../images/picto_svg/motif\ feuilles\ actu.svg);
+}
+
+.center_block p {
+    margin: 20px 0;
+}
+
+.buy {
+    display: flex;
+}
+
+.buy_btn {
+    width: 25%;
+}
+
+.liserai_sides {
+    width: 37.5%;
+    height: 50px;
+    background-image: url(../images/picto_svg/motif.svg);
+    background-repeat: repeat;
+    margin-top: 15px;
+}
+
+/**************** About section (3) ***************/
+
+.big_background_image {
+    display: flex;
+    background-image: url(../images/amphi.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center; 
+    min-height: 600px;
+    height: 100vh;
+    align-items: center;
+}
+
+.inside_block_left {
+    /* margin-left: 15%; */
+    /* position: absolute; */
+    background-color: #F8EBDD;
+    padding: 70px;
+    width: 400px;
+}
+
+/**************** Spotlight section (4) ***************/
+
+.padded_div {
+    padding: 100px 15%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    gap:15%;
+}
+.spotlight_img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 800px;
+}
+.padded_div_right{
+    min-width: 200px;
+    max-width: 600px;
+    margin-left: auto;
+    padding: 50px 0;
+}
+
+.spotlight_button {
+    display: flex;
+    gap:20px;
+}
+
+.h1_flowers {
+    width: fit-content;
+    margin:0;
+    margin-top:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../images/picto_svg/motif\ artisite\ du\ moment.svg);
+}
+
+/**************** Values section (5) ***************/
+
+.in_values_title {
+    background-color: #FBEAD8;
+    width: 30%;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+.flowers_h1 {
+    background-repeat: no-repeat;
+    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
+    max-width: 300px;
+}
+
+/********************* news section (6) ***********************************/
+
+.flowers_news {
+    background-repeat: no-repeat;
+    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
+    padding: 0 15%;
+    margin-bottom: 45px;
+    padding:15px;
+    box-sizing: border-box; 
+    width: fit-content;
+}
+
+.news {
+    gap:4%;
+}
+
+.news img {
+    width: 100%;
+}
+
+.duo {
+    width: 33.3%;
+}
+
+.top_news {
+    padding:40px;
+    background-color: #FBEAD8;
+}
+
+.hoverable-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+.hoverable-image .image-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    background-color: #AD7036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.hoverable-image:hover .image-overlay {
+    opacity: 1;
+    bottom: 0;
+  }
+  
+.hoverable-image .image-overlay p {
+    color: #fff;
+    opacity: 1;
+    margin: 0;
+}
+
+/**************** Newsletter section ***************/
+
+.newsletter {
+    background-color: #FBEAD8;
+    display: flex;
+    width: 100%;
+}
+
+.newsletter img {
+    width: 30%;
+}
+.in_newsletter{
+    padding: 50px 100px;
+}
+
+.h1_news {
+    background-repeat: no-repeat;
+    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
+}
+
+.mailbox {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/**************** Footer section (7) ***************/
+
+.liserai {
+    width: 100%;
+    height: 50px;
+    background-image: url(../images/picto_svg/motif.svg);
+    background-repeat: repeat;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: #FBEAD8;
+    display: flex;
+    padding: 100px 15%;
+}
+
+.footer_center {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_left p,.footer_right p{
+    line-height: 50px;
+}
+
+.footer_right {
+    padding-top: 15px;
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}

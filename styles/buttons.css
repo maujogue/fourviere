@@ -1,0 +1,110 @@
+.btn {
+    text-decoration: none;
+    background: none;
+    color: #AD7036;
+    border: 2px solid #AD7036;
+    padding: 18px 38px;
+    position: relative;
+    z-index: 1;
+}
+
+.button_number {
+    padding: 10px 20px;
+}
+
+.div_number {
+    padding: 18px 38px;
+    display: flex;
+    gap:20px;
+    border: 2px solid #AD7036;
+    align-items: center;
+}
+.btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Start at the bottom of the button */
+    left: 0;
+    width: 100%;
+    height: 0; /* Start with a height of 0 */
+    background-color: #AD7036; /* Slide color */
+    transition: all 0.3s ease-in-out; /* Slide animation */
+    z-index: -1; /* Push slide element behind button */
+}
+  
+.btn:hover:after {
+    height: 100%; 
+}
+
+.btn:hover {
+    transition: 0.5s;
+    color: #fff;
+}
+
+
+.reverse_btn {
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: 2px solid #AD7036;
+    padding: 18px 38px;
+    position: relative;
+    z-index: 1;
+}
+
+.reverse_btn::before {
+    position: absolute;
+    content: "";
+    background: #AD7036;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.reverse_btn:hover::before {
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+.reverse_btn:hover {
+    background: transparent;
+    color: #AD7036;
+    transition: color 0.3s ease 0s, transparent 0s ease 0s;
+} 
+.reverse_btn_small {
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: 2px solid #AD7036;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.reverse_btn_small::before {
+    position: absolute;
+    content: "";
+    background: #AD7036;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.reverse_btn_small:hover::before {
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+.reverse_btn_small:hover {
+    background: transparent;
+    color: #AD7036;
+    transition: color 0.3s ease 0s, transparent 0s ease 0s;
+} 
