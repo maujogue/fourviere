@@ -3,44 +3,52 @@
   <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Nuits de Fourvières</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Artiste Page</title>
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header>
-		<nav>
-			<ul>
-				<hr class="hr">
-				<li class="button">
-					<h1>Programme</h1>
-				</li>
-				<li>
-                    <a href="index.html"><img src="images/picto_svg/logo NDF.svg" alt="pictogramme nuits de Fourvières"></a>
-				</li>
-				<li class="button">
-					<h1>Billeterie</h1>
-				</li>
-			</ul>
-      	</nav>
+		<div class="header max-width">
+			<hr class="max-width hr">
+		</div>
+		<div class="max-width header">
+				<div>
+					<button class="btn"><h1 style="font-size: 40px;">Programme</h1></button>
+				</div>
+				<div class="nav_center">
+					<a href="index.html"><img src="images/picto_svg/LOGO header.svg" alt="pictogramme nuits de Fourvières"></a>
+				</div>
+				<div class="nav_right">
+					<a href="index.html"><img src="images/picto_svg/billetterie.svg" alt="pictogramme billetterie"></a>
+				</div>
+		</div>
     </header>
 		<main>
-			<section class="section">
-				<text class="formatted">
+			<div class="padded_div max-width">	
+				<div class="padded_div_left">
 					<p>HUMOUR</p>
-					<h1 class="Big-title">Florence Foresti</h1>
-					<h4>Du 25 au 30 juin 2023</h4>
-					<h4 class="paragraph-highlight">Une artiste complète : Boys, Boys, Boys</h4>
-					<p class="paragraph">Florence Foresti revient avec son nouveau seule-en-scène Boys Boys Boys, dans lequel elle partage ses amours, ses envies et ses contrariétés de presque quinquagénaire, sans tabou et avec mordant.
-						“Il y a des heures de vol, 48 balais”, lance-t-elle avant de partager avec son public les aléas du quotidien de quadra confirmée, célibataire en pleine vague #MeToo. Cet âge qui lui va si bien, l’humoriste ne manque pas de l’égratigner avec autodérision et de se mettre à nu comme jamais. “Un spectacle qui croque l’époque avec justesse et drôlerie”, écrira Télérama. 
-						“Avec son incroyable énergie, son sens aigu du rythme et de la formule, Florence Foresti capte l’attention et déclenche l’hilarité”, confirmera Le Monde.
-						À l’heure où “les femmes n’ont plus besoin des hommes”, mais “juste envie” pour celles qui le souhaitent, la Lyonnaise viendra sur la scène du Grand théâtre livrer une magnifique déclaration d’amour à la gente masculine, tout en célébrant la femme.</p>
-						
-						<div class="resize-button">
-							<h3 class="resize-text-button">AJOUTER AU PANIER</h3>
+					<h1 class="spaced_h1 h1_flowers">Florence Foresti</h1>
+					<h2>DU 25 AU 30 JUIN 2023</h2>
+					<p class="bold_h3">Boys Boys Boys</p>
+					<p class="spaced_p">Florence Foresti revient ave son nouveau seule-en-scène intitulé
+					Boys Boys Boys, un spectacle qui croque l'époque ave justesse et
+						drôlerie. Avec son incroyable énergie, son sens aigu du rythme et
+						de la formule, Florence Foresti capte l'attention et déclenche
+						l'hilarité (Le Monde).</p>
+					<div class="spotlight_button">
+						<div class="div_number">
+							<a href=""><button class="btn button_number">-</button></a>
+							<p>1</p>
+							<a href=""><button class="reverse_btn_small">+</button></a>
+							<p>30€</p>
 						</div>
-				</text>
-				<img src="images/photos png/Foresti 2.png">
-			</section>
+						<button class="reverse_btn"><p>AJOUTER AU PANIER</p></button>
+				</div>
+			</div>
+			<a><img class="spotlight_img" src="images/photos_png/Foresti_2_big.png" alt="image artiste du moment"></a>
+		</div>
+
 			<section>
 				<div class="video-size">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/fr9asmnnmJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
