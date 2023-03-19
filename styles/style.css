@@ -32,7 +32,8 @@ body {
 
 h1 {
     font-family: 'hatton';
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: normal;
 }
 
 h2 {
@@ -48,7 +49,7 @@ p {
 }      
 
 a{
-    text-decoration: none;
+    color: inherit;
 }
 
 .spaced_h1{
@@ -78,6 +79,11 @@ a{
     /* background-color: black;    */
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /**************** Header ***************/
 
 .header {
@@ -105,47 +111,21 @@ a{
 
 /**************** Hero section (1) ***************/
 
-.big_leaves {
-    background-image: url(../images/picto_svg/feuilles.svg);
-    background-repeat: no-repeat;
-    background-repeat: repeat-x;
-    background-size: auto auto;
-    background-position: center center;
-}
+
 
 /**************** Ticketing section (2) ***************/
 
 .center_block {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 0;
     width: 100%;
-    margin: 200px 0;
     margin-top: 150px;
-    text-align: center;
-    align-items: center;
-}
-
-.flowers_ticket {
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    margin-bottom: 4px;
-    padding: 10px;
-    background-repeat: repeat;
-    background-image: url(../images/picto_svg/motif\ feuilles\ actu.svg);
-}
-
-.center_block p {
-    margin: 20px 0;
-}
-
-.buy {
-    display: flex;
-}
-
-.buy_btn {
-    width: 25%;
+    text-align: center;
+    align-items: center;
 }
 
 .liserai_sides {
@@ -163,18 +143,33 @@ a{
     background-image: url(../images/amphi.jpg);
     box-sizing: border-box;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center; 
     min-height: 600px;
     height: 100vh;
     align-items: center;
 }
 
+.festival_image_div_left {
+    background-image: url(../images/photos_png/page\ le\ festival/feuille\ image\ 2.png);
+    background-size: 40%;
+    margin-top: 0;
+    background-position: left;
+}
+
+.festival_image_div_right {
+    background-image: url(../images/photos_png/page\ le\ festival/feuille\ image\ 1.png);
+    background-size: 40%;
+    margin-top: 0;
+    background-position: right;
+}
+
 .inside_block_left {
     background-color: #F8EBDD;
     padding: 70px;
-    width: 400px;
+    min-width: 200px;
+    max-width: 400px;
 }
-
 /**************** Spotlight section (4) ***************/
 
 .padded_div {
@@ -200,6 +195,7 @@ a{
     padding: 50px 0;
 }
 
+
 .padded_div_left{
     min-width: 200px;
     max-width: 600px;
@@ -212,15 +208,7 @@ a{
     gap:20px;
 }
 
-.h1_flowers {
-    width: fit-content;
-    margin:0;
-    margin-top:10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-repeat: no-repeat;
-    background-image: url(../images/picto_svg/motif\ artisite\ du\ moment.svg);
-}
+
 
 /**************** Values section (5) ***************/
 
@@ -231,23 +219,7 @@ a{
     max-width: 800px;
 }
 
-.flowers_h1 {
-    background-repeat: no-repeat;
-    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
-    max-width: 300px;
-}
-
 /********************* news section (6) ***********************************/
-
-.flowers_news {
-    background-repeat: no-repeat;
-    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
-    padding: 0 15%;
-    margin-bottom: 45px;
-    padding:15px;
-    box-sizing: border-box; 
-    width: fit-content;
-}
 
 .news {
     gap:4%;
@@ -312,6 +284,7 @@ a{
 .newsletter img {
     width: 30%;
 }
+
 .in_newsletter{
     padding: 50px 100px;
 }
@@ -364,4 +337,40 @@ a{
     display: flex;
     gap: 30px;
     margin-bottom: 50px;
+}
+
+.flowers_medium {
+    width: fit-content;
+    margin-bottom: 4px;
+    padding: 30px;
+    background-image: url(../images/picto_svg/motif\ feuilles\ actu.svg);
+}
+
+.flowers_h1_separated_div {
+    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
+    padding: 0 15%;
+    margin-bottom: 45px;
+    padding:15px;
+    width: fit-content;
+}
+
+.h1_flowers {
+    width: fit-content;
+    margin:0;
+    margin-top:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../images/picto_svg/motif\ artisite\ du\ moment.svg);
+}
+
+.big_flowers {
+    background-image: url(../images/picto_svg/feuilles.svg);
+}
+
+.flowers {
+    box-sizing: border-box; 
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+    background-position: center center;
 }
