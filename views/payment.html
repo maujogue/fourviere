@@ -4,103 +4,45 @@
 		<div id="head"></div>
 	</head>
   <body>
-	<div id="header"></div>
-    <header>
-		<nav>
-			<ul class="nav" style="align-items: center; margin-top: 4.5%; margin-bottom: 0.5%;">
-				<li class="nav2">
-					<a href="index.html"><img src="images/picto_svg/LOGO header.svg" alt="pictogramme nuits de Fourvières du 31/05 au 28/07"></a>
-				</li>
-			</ul>
-            <hr class="hr">
-      	</nav>
-        <div class="disposition" style="margin-top: 0.7%;">
-            <tickets style="margin-left: 16%; margin-right: -16%;">
-                <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
-                <p class="size-font-title">Billets</p></a>
-            </tickets>
-            <coordinate class="opacity-text">
-                <a href="contact_details.html" style="text-decoration: none; color: #AD7036"> <h2 class="size-font-numbers">2</h2>
-                <p class="size-font-title">Coordonnées</p></a>
-            </coordinate>
-            <payment class="opacity-text" style="margin-right: 16%; margin-left: -16%;">
-                <h2 class="size-font-numbers">3</h2>
-                <p class="size-font-title">Paiement</p>
-            </payment>
-        </div>
-    </header>
-    <main style="display: flex; justify-content: space-between;">
-        <div style="margin-left: 13%; margin-top: 2%;">
-        <h1 style="margin-top: 7%; margin-left: 15.3%; margin-bottom: 2%; font-size: 315%;">
-            Vos billets
-        </h1>
-            <basket style="padding-top: 1.1%;margin-top: 1.1%; padding-bottom: 1.1%; display: flex; background-image: linear-gradient(to right, transparent, transparent 15.3%, #F8EBDD 10vh, #F8EBDD 100vh, transparent 0%, transparent);">
-                <img src="images/photos_png/Foresti_2.png" alt="Florence Forresti" style="width: 100px; height: 100px; margin-left: 13.3%; margin-right: 0.3%;">
-                <h2 style="font-family: satochi-bold; margin-top: 0.2%; padding-top: 0.2%; font-size: 200%; margin-right: 0.5%;">
-                    Florence Forresti
-                    <p style="font-size: 70%; margin-left: 28%; font-family: satochi;">
-                        25 juin 2023
-                    </p>
-                </h2>
-                <div class="div_number_payment" style="margin-left: 6%;">
-                    <a href=""><button class="btn button_number" style="font-size: 100%; font-family: phaton;">-</button></a>
-                    <p style="margin-left: 10%;">1</p>
-                    <a href=""><button class="reverse_btn_small" style="font-size: 100%; font-family: phaton;">+</button></a>
-                    <p style="margin-left: 10%;">30€</p>
+    <script src="../scripts/partials.js"></script>
+	<div id="header_payment"></div>
+    <div class="disposition">
+        <tickets style="margin-left: 16%; margin-right: -16%;">
+            <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
+                <div class="flowers flowers_medium">
+                    <h2 class="size-font-title">Billets</h2></a>
                 </div>
-            </basket>
-        </div>
-         <payment style="border: 2px solid #AD7036; top: 0%; margin-right: 15%; margin-top: 2%; padding-left: 3%; padding-right: 3%;">
-            <h1 style="padding-top: 20%; font-size: 315%; text-align: center;">
-                Paiement 
-            </h1>
-            <div style="display: flex; margin-bottom: 15%;">
-                <h2 style="text-align: left; margin-top: 12%; font-family: satochi-bold; font-size: 180%; margin-left: 5%;">
-                1 Billet
-                </h2>
-                <p style="margin-left: 41%; margin-top: 12%; font-family: satochi; font-size: 180%;"> 30€</p>
+        </tickets>
+        <coordinate>
+            <div class="opacity-text">
+                <a href="contact_details.html" style="text-decoration: none; color: #AD7036" > <h2 class="size-font-numbers">2</h2>
             </div>
-            <bon style="display: inline-block">
-                <button class="white-btn">
-                    <h2 style="text-align: center;">Ajouter un code promo</h2>
-                </button>
-                <button  class="reverse_btn">
-                    <h2 style="text-align: center;">
-                        Passer au paiement
-                    </h2>
-                </button>
-            </bon>
+                <div class="flowers flowers_medium">
+                    <p class="size-font-title opacity-text">Coordonnées</p></a>
+                </div>
+        </coordinate>
+        <payment class="opacity-text" style="margin-right: 16%; margin-left: -16%;">
+            <h2 class="size-font-numbers">3</h2>
+            <p class="size-font-title">Paiement</p>
         </payment>
+    </div>
+    <div class="padded_div max-width">
+        <a href="artist.html"><img class="spotlight_img" src="../images/photos_png/Foresti_2.png" alt="image artiste du moment"></a>
+    <div class="padded_div_right payment_box">
+        <h1 class="spaced_h1 h1_flowers flowers">PAIEMENT</h1>
+        <div style="display:flex;">
+            <h2 class="bold_h2">2 BILLETS</h2>
+            <p class="spaced_p" style="margin-left: auto;">69</p>
+        </div>
+
+            <div class="div_number white-btn">
+                <p>Ajouter un code promo</p>
+            </div>
+            <button class="reverse_btn" style="margin-top:15px;"><p>PASSER AU PAIEMENT</p></button>
+    </div>
+</div>
 
     </main>
-    <div class="liserai">
-	</div>
-    <footer class="footer">
-		<div class="footer_left">
-			<p>INFORMATIONS PRATIQUES<br>
-			CE & COLLECTIVITÉS <br>
-			MENTIONS LEGALES<br>
-			PRESSE<br>
-			RÈGLEMENT DU FESTIVAL & CGV<br>
-			TECHNIQUE</p>
-		</div>
-		<div class="footer_center">
-			<div><img src="images/picto_svg/logo métropole lyon.svg" alt="logo metropole"></div>
-			<div><img src="images/picto_svg/logo NDF.svg" alt="picto les nuits de Fourvières"></div>
-		</div>
-		<div class="footer_right">
-			<div class="socials">
-				<div><img src="images/picto_svg/Instagram_logo_2016.svg" alt="logo Instagram"></div>
-				<div><img src="images/picto_svg/Twitter-logo.svg" alt="logo Twitter"></div>
-				<div><img src="images/picto_svg/Facebook_F_icon.svg" alt="logo Facebook"></div>
-				<div><img src="images/picto_svg/YouTube_full-color_icon_(2017).svg" alt="logo YouTube"></div>
-				<div><img src="images/picto_svg/linkedin.svg" alt="logo linkedin"></div>
-			</div>
-			<p><b>Contact</b><br>
-			1 RUE CLEBERG 69005 lyon<br>
-			INFORMATIONS : 04 72 57 15 40<br>
-			BILLETTERIE : 04 72 32 00 00</p>
-		</div>
-    </footer>
+    <div id="footer"></div>
   </body>
 </html>

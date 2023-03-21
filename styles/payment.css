@@ -16,49 +16,29 @@
     text-align: center;
     width: 30%;
     min-width: 350px;
-    background-image: url("images/picto_svg/motif petites feuilles.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-    background-clip: none;
 }
 
 
 .disposition{
     display: flex;
     justify-content:space-between;
-   
 }
 
+.payment_box {
+    border: 2px solid #AD7036;
+    padding:50px 80px;
+}
 
 .opacity-text{
     opacity: 0.3;
     transition: opacity 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 0);
 }
-
 
 .opacity-text:hover{
     opacity: 1;
 }
 
-
-.div_number_payment {
-     padding: 0.1% 1% 0.1% 1%;
-    display: flex;
-    gap:20px;
-    border: 2px solid #AD7036;
-    align-items: center;
-    white-space: nowrap;
-}
-
-
 .white-btn {
-    text-decoration: none;
-    font-family: satochi;
     background-color: #FFFFFF;
-    color: #AD7036;
-    border: 0px;
-    padding: 18px 38px;
-    position: relative;
+    border: 0;
 }

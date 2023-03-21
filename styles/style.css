@@ -222,23 +222,35 @@ svg:hover image {
 } */
 
 .artist_item {
-    width: 300px;
+    width: 275px;
     height: fit-content;
     margin-bottom: 100px;
 }
 
 .artist_item img{
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     
 }
 
 .galerie {
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10%;
-    max-width: 2200px;
+    gap: 15%;
+    /* margin-right:30%; */
+    max-width: 1200px;
+    /* background-color: black;    */
+}
+
+.filter {
+    position:sticky;
+    top: 30%;
+    width: 300px;
+    height: 400px;
+    background-color: #F8EBDD;
+    border: 2px solid #AD7036;
 }
 
 /**************** Values section (5) ***************/
@@ -377,6 +389,13 @@ svg:hover image {
     background-image: url(../images/picto_svg/motif\ feuilles\ actu.svg);
 }
 
+.flowers_small {
+    width: fit-content;
+    margin-bottom: 4px;
+    padding: 30px;
+    background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
+}
+
 .flowers_h1_separated_div {
     background-image: url(../images/picto_svg/motif\ petites\ feuilles.svg);
     padding: 0 15%;
@@ -433,3 +452,12 @@ svg:hover image {
         transform: translateX(-100%);
     }
 } 
+
+.payment {
+    border: 2px solid #AD7036; 
+    margin-right: 15%; 
+    margin-top: 2%; 
+    padding-left: 3%; 
+    padding-right: 3%;
+    background-color: black;
+}
