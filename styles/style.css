@@ -121,7 +121,6 @@ a {
     justify-content: center;
     padding-bottom: 0;
     width: 100%;
-    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -135,6 +134,7 @@ a {
     background-repeat: repeat;
     margin-top: 15px;
 }
+
 
 /**************** About section (3) ***************/
 
@@ -208,7 +208,38 @@ a {
     gap:20px;
 }
 
+/* svg {
+    transform: scale(0.65,0.65);
+}
 
+svg image {
+        transform-origin: center center;
+        transition: transform 0.3s ease-out;
+}
+
+svg:hover image {
+    transform: scale(1.05,1.05);
+} */
+
+.artist_item {
+    width: 300px;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.artist_item img{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.galerie {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10%;
+    max-width: 2200px;
+}
 
 /**************** Values section (5) ***************/
 
@@ -374,3 +405,31 @@ a {
     background-size: auto auto;
     background-position: center center;
 }
+ /*caroussel*/
+
+.animate:hover {
+    animation-play-state: paused;
+}
+
+.animate2:hover{
+    animation-play-state: paused;
+}
+
+.animate {
+    display: flex;
+    animation: move 10s linear infinite;
+}
+
+.animate2 {
+    display: flex;
+    animation: move 10s linear infinite reverse;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+} 
