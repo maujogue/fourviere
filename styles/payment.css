@@ -1,0 +1,64 @@
+/* payment */
+.size-font-numbers{
+    font-size: 270%;
+    font-family: satochi-bold;
+    width: 30%;
+    margin-left: 34%;
+    text-align: center;
+}
+
+
+.size-font-title{
+    font-family: phaton;
+    font-size: 200%;
+    padding-top: 8.1%;
+    padding-bottom: 8.1%;
+    text-align: center;
+    width: 30%;
+    min-width: 350px;
+    background-image: url("images/picto_svg/motif petites feuilles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-clip: none;
+}
+
+
+.disposition{
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+
+.opacity-text{
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.opacity-text:hover{
+    opacity: 1;
+}
+
+
+.div_number_payment {
+     padding: 0.1% 1% 0.1% 1%;
+    display: flex;
+    gap:20px;
+    border: 2px solid #AD7036;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.white-btn {
+    text-decoration: none;
+    font-family: satochi;
+    background-color: #FFFFFF;
+    color: #AD7036;
+    border: 0px;
+    padding: 18px 38px;
+    position: relative;
+}
