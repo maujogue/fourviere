@@ -8,6 +8,10 @@
     z-index: 1;
 }
 
+.square_btn {
+    padding: 18px;
+} 
+
 .button_number {
     padding: 10px 20px;
 }
@@ -30,7 +34,7 @@
     transition: all 0.3s ease-in-out; /* Slide animation */
     z-index: -1; /* Push slide element behind button */
 }
-  
+  ~
 .btn:hover:after {
     height: 100%; 
 }
@@ -107,4 +111,14 @@
     background: transparent;
     color: #AD7036;
     transition: color 0.3s ease 0s, transparent 0s ease 0s;
+}
+
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:checked {
+    background-color: #AD7036;
 }

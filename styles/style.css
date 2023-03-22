@@ -239,18 +239,24 @@ svg:hover image {
     flex-wrap: wrap;
     align-items: center;
     gap: 15%;
-    /* margin-right:30%; */
+    width: 70%;
     max-width: 1200px;
-    /* background-color: black;    */
 }
 
 .filter {
     position:sticky;
     top: 30%;
-    width: 300px;
-    height: 400px;
+    width: 15%;
+    max-width: 300px;
     background-color: #F8EBDD;
     border: 2px solid #AD7036;
+    padding: 30px;
+}
+
+.filter div {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
 }
 
 /**************** Values section (5) ***************/
