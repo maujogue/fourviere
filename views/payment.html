@@ -9,40 +9,66 @@
   <body>
     <script src="../scripts/partials.js"></script>
 	<div id="header_payment"></div>
-    <div class="disposition">
-        <tickets style="margin-left: 16%; margin-right: -16%;">
+    <div class="padded_div disposition max-width">
+        <tickets>
             <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
-                <div class="flowers flowers_medium">
-                    <h2 class="size-font-title">Billets</h2></a>
-                </div>
+                <div class="flowers_small flowers">
+                    <h2 class="size-font-title">Billets</h2>
+                </div></a>
         </tickets>
-        <coordinate>
-            <div class="opacity-text">
+        <coordinate class="opacity-text">
+            <div>
                 <a href="contact_details.html" style="text-decoration: none; color: #AD7036" > <h2 class="size-font-numbers">2</h2>
             </div>
-                <div class="flowers flowers_medium">
+                <div class="flowers flowers_small">
                     <p class="size-font-title opacity-text">Coordonnées</p></a>
                 </div>
         </coordinate>
-        <payment class="opacity-text" style="margin-right: 16%; margin-left: -16%;">
+        <payment class="opacity-text">
             <h2 class="size-font-numbers">3</h2>
+            <div class="flowers flowers_small">
             <p class="size-font-title">Paiement</p>
+            </div>
         </payment>
     </div>
-    <div class="padded_div max-width">
-        <a href="artist.html"><img class="spotlight_img" src="../images/photos_png/Foresti_2.png" alt="image artiste du moment"></a>
-    <div class="padded_div_right payment_box">
-        <h1 class="spaced_h1 h1_flowers flowers">PAIEMENT</h1>
-        <div style="display:flex;">
-            <h2 class="bold_h2">2 BILLETS</h2>
-            <p class="spaced_p" style="margin-left: auto;">69</p>
+    <div class="padded_div max-width" style="align-items: normal;">
+        <div>
+        <h1>Vos billets</h1>
+        <div class="disposition_tickets background_tickets">
+            <div class="big_leaf">
         </div>
+            <img src="../images/photos_png/Foresti_2.png" alt="Florence Foresti" class="small-forresti">
+            <div>
+                <p class="artist-title">Florence Foresti</p>
+                <div style="text-align: center;">
+                    <p class="date_background">25 Juin 2023</p>
+                </div>
+            </div>
+        </background>
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <a href=""><button class="btn_payment">-</button></a>
+                    <p>2</p>
+                    <a href=""><button class="reverse_btn_small_payment">+</button></a>
+                    <p>30€</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="padded_div_right_payment payment_box title-payment liserai_payment" style="">
+        <h4>Paiement</h4>
+        <div style="display:flex; margin-top: 35px;">
+            <h2 class="bold_h2">2 BILLETS</h2>
+            <p class="spaced_p price">60€</p>
+        </div>
             <div class="div_number white-btn">
                 <p>Ajouter un code promo</p>
             </div>
-            <button class="reverse_btn" style="margin-top:15px;"><p>PASSER AU PAIEMENT</p></button>
-    </div>
+            <div class="">
+                <a href="contact_details.html" style="text-decoration: none; color: #AD7036"><button class="reverse_btn" style="margin-top:35px;"><p>PASSER AU PAIEMENT</p></button>
+            </div>
+        </div>
 </div>
 
     </main>

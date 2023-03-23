@@ -1,41 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+	<head>
+        <meta charset="UTF-8">
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<div id="head"></div>
-  </head>
+	</head>
   <body>
     <script src="../scripts/partials.js"></script>
-    <header>
-      <div id="header"></div>
-        <div class="disposition" style="margin-top: 0.7%;">
-            <tickets style="margin-left: 16%; margin-right: -16%;">
-                <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
-                <p class="size-font-title">Billets</p></a>
-            </tickets>
-            <coordinate class="opacity-text">
-                <a href="contact_details.html" style="text-decoration: none; color: #AD7036"> <h2 class="size-font-numbers">2</h2>
-                <p class="size-font-title">Coordonnées</p></a>
-            </coordinate>
-            <payment class="opacity-text" style="margin-right: 16%; margin-left: -16%;">
-                <h2 class="size-font-numbers">3</h2>
-                <p class="size-font-title">Paiement</p>
-            </payment>
+	<div id="header_payment"></div>
+  <div class="padded_div disposition max-width">
+    <tickets class="opacity-text">
+        <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
+            <div class=" flowers_small flowers">
+                <h2 class="size-font-title">Billets</h2>
+            </div></a>
+    </tickets>
+    <coordinate>
+        <div>
+            <a href="contact_details.html" style="text-decoration: none; color: #AD7036" > <h2 class="size-font-numbers">2</h2>
         </div>
-    </header>
-    <main>
-        <contact> <!-- contient toute la partie gauche -->
-                <!-- tous ceux là vont être en display flex et à l'intérieur deux sous partie pour chaque côté du tableau, un élément pour nom+field et un autre pour prénom+ fields -->
-            <h1 style="display: flex"></h1>
-            <name style="display: flex"></name>
-            <tel style="display: flex"></tel>
-            <hr class="hr">
-            <address style="display: flex"></address>
-            <town style="display: flex"></town>
-        </contact>
-    </main>
-    <div id="footer"></div>
-  </body>
+            <div class="flowers flowers_small">
+                <p class="size-font-title">Coordonnées</p></a>
+            </div>
+    </coordinate>
+    <payment class="opacity-text">
+        <h2 class="size-font-numbers">3</h2>
+        <div class="flowers flowers_small">
+        <p class="size-font-title">Paiement</p>
+        </div>
+    </payment>
+</div>
+    <!-- end of the header -->
+</div>
+
+
+<div class="padded_div max-width" style="align-items: normal;padding-top:5vh;">
+  <div style="width: 50%;">
+    <h1 style="margin-bottom: 50px;;">Vos Coordonnées</h1>
+    <div class="disposition_contact">
+      <div>
+        <p>Nom</p>
+        <input type="text" placeholder="Desgranges" id="name" name="name" class="input_contact" required>
+      </div>
+      <div>
+        <p>Prénom</p>
+        <input type="text" placeholder="Théo" id="firstname" name="firstname" class="input_contact" required>
+      </div>
+    </div>
+    <div class="disposition_contact" style="margin-top: 20px;">
+      <div>
+        <p>Email</p>
+        <input type="text" placeholder="theo.desgranges@gmail.com" id="name" name="name" class="input_contact" required>
+      </div>
+      <div>
+        <p>Téléphone</p>
+        <input type="text" placeholder="0630710210" id="firstname" name="firstname" class="input_contact" required>
+      </div>
+    </div>
+
+  <hr class="hr_payment">
+
+  <div class="disposition_contact">
+    <div>
+      <p>Addresse</p>
+      <input type="text" placeholder="theo.desgranges@gmail.com" id="name" name="name" class="input_contact" required>
+    </div>
+    <div>
+      <p>Code Postal</p>
+      <input type="text" placeholder="0630710210" id="firstname" name="firstname" class="input_contact" required>
+    </div>
+  </div>
+
+  <div class="disposition_contact" style="margin-top: 20px;">
+    <div>
+      <p>Ville</p>
+      <input type="text" placeholder="theo.desgranges@gmail.com" id="name" name="name" class="input_contact" required>
+    </div>
+    <div>
+      <p>Complément d'addresse</p>
+      <input type="text" placeholder="0630710210" id="firstname" name="firstname" class="input_contact" required>
+    </div>
+  </div>
+</div>
+
+<div class="padded_div_right_payment payment_box title-payment liserai_payment">
+  <h4>Paiement</h4>
+  <div style="display:flex; margin-top: 35px;">
+      <h2 class="bold_h2">2 BILLETS</h2>
+      <p class="spaced_p price">60€</p>
+  </div>
+      <div class="div_number white-btn">
+          <p>Ajouter un code promo</p>
+      </div>
+      <div class="">
+          <a href="contact_details.html" style="text-decoration: none; color: #AD7036"><button class="reverse_btn" style="margin-top:35px;"><p>PASSER AU PAIEMENT</p></button>
+      </div>
+  </div>
+</div>
+
+</main>
+<div id="footer"></div>
+</body>
 </html>

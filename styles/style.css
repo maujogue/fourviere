@@ -426,7 +426,6 @@ svg:hover image {
 .flowers {
     box-sizing: border-box; 
     background-repeat: no-repeat;
-    background-repeat: repeat-x;
     background-size: auto auto;
     background-position: center center;
 }
