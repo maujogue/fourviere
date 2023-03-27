@@ -53,6 +53,7 @@
     padding: 18px 38px;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .reverse_btn::before {

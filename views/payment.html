@@ -4,11 +4,23 @@
         <meta charset="UTF-8">
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<div id="head"></div>
+		<title>Les Nuits de Fourvières</title>
+		<link rel="stylesheet" href="../styles/buttons.css">
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/payment.css">
 	</head>
   <body>
-    <script src="../scripts/partials.js"></script>
-	<div id="header_payment"></div>
+    
+	<header>
+        <div class="max-width header" style="justify-content: center;">
+            <a href="../index.html"><div style="margin-left:auto;margin-right:auto;margin-top: 80px;">
+                <img src="../images/picto_svg/LOGO header.svg" alt="pictogramme nuits de Fourvières">
+            </div></a>
+        </div>
+            <div class="header max-width">
+                <hr class="max-width hr" style="margin-top:15px;">
+            </div>
+    </header>
     <div class="padded_div disposition max-width">
         <tickets>
             <a href="payment.html" style="color: #AD7036"><h2 class="size-font-numbers">1</h2>
@@ -34,44 +46,208 @@
     <div class="padded_div max-width" style="align-items: normal;">
         <div>
         <h1>Vos billets</h1>
-        <div class="disposition_tickets background_tickets">
+        <!-- all tickets -->
+        <div class="disposition_tickets background_tickets" name="polnareff">
             <div class="big_leaf">
         </div>
-            <img src="../images/photos_png/Foresti_2.png" alt="Florence Foresti" class="small-forresti">
+            <img src="../images/photos_png/Polnareff_1.png" alt="polnareff" class="small-forresti">
+            <div>
+                <p class="artist-title">Michel Polnareff</p>
+                <div style="text-align: center;">
+                    <p class="date_background">5 Juin 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="chris">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Chris_2.png" alt="chris" class="small-forresti">
+            <div>
+                <p class="artist-title">Chris</p>
+                <div style="text-align: center;">
+                    <p class="date_background">6 Juin 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="foresti">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Foresti_2.png" alt="foresti" class="small-forresti">
             <div>
                 <p class="artist-title">Florence Foresti</p>
                 <div style="text-align: center;">
                     <p class="date_background">25 Juin 2023</p>
                 </div>
-            </div>
-        </background>
+        </div>
+        
             <div class="spotlight_button" style="margin-left: auto;">
                 <div class="div_number_payment">
-                    <a href=""><button class="btn_payment">-</button></a>
-                    <p>2</p>
-                    <a href=""><button class="reverse_btn_small_payment">+</button></a>
-                    <p>30€</p>
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
                 </div>
             </div>
         </div>
+        <div class="disposition_tickets background_tickets" name="biolay">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Biolay_2.png" alt="biolay" class="small-forresti">
+            <div>
+                <p class="artist-title">Benjamin Biolay</p>
+                <div style="text-align: center;">
+                    <p class="date_background">5-6 Juillet 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="zazie">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Zazi_2.png" alt="zazie" class="small-forresti">
+            <div>
+                <p class="artist-title">Zazie</p>
+                <div style="text-align: center;">
+                    <p class="date_background">12 Juillet 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="blaze">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/The_blaze_2.png" alt="blaze" class="small-forresti">
+            <div>
+                <p class="artist-title">The Blaze</p>
+                <div style="text-align: center;">
+                    <p class="date_background">25 Juillet 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="adjani">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Isabelle_Adjani_2.png" alt="adjani" class="small-forresti">
+            <div>
+                <p class="artist-title">Isabelle Adjani</p>
+                <div style="text-align: center;">
+                    <p class="date_background">20-21 Juillet 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <div class="disposition_tickets background_tickets" name="pomme">
+            <div class="big_leaf">
+        </div>
+            <img src="../images/photos_png/Pomme_2.png" alt="pomme" class="small-forresti">
+            <div>
+                <p class="artist-title">Pomme</p>
+                <div style="text-align: center;">
+                    <p class="date_background">26 Juillet 2023</p>
+                </div>
+        </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="disposition_tickets background_tickets" name="tamino">
+            <div class="big_leaf">
+            </div>
+            <img src="../images/photos_png/Tamino_2.png" alt="tamino" class="small-forresti">
+            <div>
+                <p class="artist-title">Tamino</p>
+                <div style="text-align: center;">
+                    <p class="date_background">24 Juillet 2023</p>
+                </div>
+            </div>
+        
+            <div class="spotlight_button" style="margin-left: auto;">
+                <div class="div_number_payment">
+                    <button class="btn_payment" name="minusTotalCart">-</button>
+                    <p name="totalQuantity">0</p>
+                    <button class="reverse_btn_small_payment" name="plusTotalCart">+</button>
+                    <p name="price">30€</p>
+                </div>
+            </div>
+        </div>
+        <!-- all tickets -->
     </div>
 
-    <div class="padded_div_right_payment payment_box title-payment liserai_payment" style="">
+    <div class="padded_div_right_payment payment_box title-payment liserai_payment">
         <h4>Paiement</h4>
         <div style="display:flex; margin-top: 35px;">
-            <h2 class="bold_h2">2 BILLETS</h2>
-            <p class="spaced_p price">60€</p>
+            <h2 class="bold_h2" name="cartQuantity">2</h2>
+            <h2 class="bold_h2">&nbspBILLETS</h2>
+            <p class="spaced_p price" name="totalPrice">60€</p>
         </div>
             <div class="div_number white-btn">
                 <p>Ajouter un code promo</p>
             </div>
-            <div class="">
-                <a href="contact_details.html" style="text-decoration: none; color: #AD7036"><button class="reverse_btn" style="margin-top:35px;"><p>PASSER AU PAIEMENT</p></button>
-            </div>
+            <a href="contact_details.html" ><button class="reverse_btn" style="margin-top:35px;"><p>PASSER AU PAIEMENT</p></button>
+
         </div>
 </div>
-
     </main>
     <div id="footer"></div>
-  </body>
+</body>
+<script src="../scripts/partials.js"></script>
+<script src="../scripts/cart_management.js"></script>
 </html>
